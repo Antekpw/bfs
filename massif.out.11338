@@ -1,0 +1,952 @@
+desc: (none)
+cmd: ./a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=43316770776
+mem_heap_B=33944
+mem_heap_extra_B=14712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=71500103760
+mem_heap_B=49160
+mem_heap_extra_B=22320
+mem_stacks_B=0
+heap_tree=detailed
+n3: 49160 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 44528 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 44528 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 44528 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 536 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=111674440199
+mem_heap_B=71432
+mem_heap_extra_B=33456
+mem_stacks_B=0
+heap_tree=detailed
+n3: 71432 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 66768 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 66768 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 66768 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 568 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=144849209932
+mem_heap_B=87032
+mem_heap_extra_B=41256
+mem_stacks_B=0
+heap_tree=detailed
+n3: 87032 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 82304 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 82304 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 82304 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 632 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=184192102464
+mem_heap_B=104648
+mem_heap_extra_B=50064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=213657952103
+mem_heap_B=120632
+mem_heap_extra_B=58056
+mem_stacks_B=0
+heap_tree=detailed
+n3: 120632 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 115984 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 115984 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 115984 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 552 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=234887424283
+mem_heap_B=130344
+mem_heap_extra_B=62912
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=275156712342
+mem_heap_B=147080
+mem_heap_extra_B=71280
+mem_stacks_B=0
+heap_tree=detailed
+n3: 147080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 142464 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 142464 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 142464 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 520 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=301635214508
+mem_heap_B=156072
+mem_heap_extra_B=75776
+mem_stacks_B=0
+heap_tree=detailed
+n3: 156072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 151424 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 151424 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 151424 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 552 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=335246938682
+mem_heap_B=167272
+mem_heap_extra_B=81376
+mem_stacks_B=0
+heap_tree=detailed
+n3: 167272 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 162592 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 162592 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 162592 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 584 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=373863066948
+mem_heap_B=179304
+mem_heap_extra_B=87392
+mem_stacks_B=0
+heap_tree=detailed
+n3: 179304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 174576 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 174576 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 174576 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 632 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=402265820320
+mem_heap_B=188424
+mem_heap_extra_B=91952
+mem_stacks_B=0
+heap_tree=detailed
+n3: 188424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 183728 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 183728 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 183728 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 600 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=421716830815
+mem_heap_B=195576
+mem_heap_extra_B=95528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=453834153171
+mem_heap_B=206008
+mem_heap_extra_B=100744
+mem_stacks_B=0
+heap_tree=detailed
+n3: 206008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 201312 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 201312 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 201312 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 600 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=488036243453
+mem_heap_B=216488
+mem_heap_extra_B=105984
+mem_stacks_B=0
+heap_tree=detailed
+n3: 216488 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 211760 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 211760 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 211760 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 632 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=508698420453
+mem_heap_B=223064
+mem_heap_extra_B=109272
+mem_stacks_B=0
+heap_tree=detailed
+n3: 223064 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 218320 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 218320 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 218320 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 648 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=539650287671
+mem_heap_B=233352
+mem_heap_extra_B=114416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=584904443304
+mem_heap_B=246056
+mem_heap_extra_B=120768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=611281175426
+mem_heap_B=253816
+mem_heap_extra_B=124648
+mem_stacks_B=0
+heap_tree=detailed
+n3: 253816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 249120 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 249120 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 249120 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097DC: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 600 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=641322546444
+mem_heap_B=263976
+mem_heap_extra_B=129728
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=669972445951
+mem_heap_B=276056
+mem_heap_extra_B=135768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=702904217382
+mem_heap_B=288680
+mem_heap_extra_B=142080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=722903133649
+mem_heap_B=297576
+mem_heap_extra_B=146528
+mem_stacks_B=0
+heap_tree=detailed
+n2: 297576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 292896 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 292896 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 292896 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4680 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=752217534929
+mem_heap_B=309208
+mem_heap_extra_B=152344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=790116963315
+mem_heap_B=325400
+mem_heap_extra_B=160440
+mem_stacks_B=0
+heap_tree=detailed
+n2: 325400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 320752 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 320752 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 320752 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4648 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=827713108460
+mem_heap_B=345400
+mem_heap_extra_B=170440
+mem_stacks_B=0
+heap_tree=detailed
+n2: 345400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 340768 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 340768 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 340768 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4632 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=874988016045
+mem_heap_B=366632
+mem_heap_extra_B=181056
+mem_stacks_B=0
+heap_tree=detailed
+n2: 366632 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 362000 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 362000 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 362000 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4632 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=919244879988
+mem_heap_B=385304
+mem_heap_extra_B=190392
+mem_stacks_B=0
+heap_tree=detailed
+n2: 385304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 380656 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 380656 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 380656 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4648 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=953286475593
+mem_heap_B=396952
+mem_heap_extra_B=196216
+mem_stacks_B=0
+heap_tree=detailed
+n2: 396952 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 392208 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 392208 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 392208 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4744 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=979246499218
+mem_heap_B=404936
+mem_heap_extra_B=200208
+mem_stacks_B=0
+heap_tree=detailed
+n2: 404936 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 400080 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 400080 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 400080 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4856 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=1020400962174
+mem_heap_B=418488
+mem_heap_extra_B=206984
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1049919917491
+mem_heap_B=429816
+mem_heap_extra_B=212648
+mem_stacks_B=0
+heap_tree=detailed
+n2: 429816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 425184 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 425184 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 425184 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4632 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=1077514650918
+mem_heap_B=439992
+mem_heap_extra_B=217736
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1097866592181
+mem_heap_B=446232
+mem_heap_extra_B=220856
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1125393148558
+mem_heap_B=456216
+mem_heap_extra_B=225848
+mem_stacks_B=0
+heap_tree=detailed
+n2: 456216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 451520 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 451520 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 451520 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4696 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=1157325356748
+mem_heap_B=467032
+mem_heap_extra_B=231256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1203755291552
+mem_heap_B=484232
+mem_heap_extra_B=239856
+mem_stacks_B=0
+heap_tree=detailed
+n2: 484232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 479504 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 479504 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 479504 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4728 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=1229436135914
+mem_heap_B=491704
+mem_heap_extra_B=243592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1266087830584
+mem_heap_B=501096
+mem_heap_extra_B=248288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1296153036929
+mem_heap_B=508920
+mem_heap_extra_B=252200
+mem_stacks_B=0
+heap_tree=detailed
+n2: 508920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 504272 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 504272 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 504272 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4648 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=1336523470302
+mem_heap_B=518648
+mem_heap_extra_B=257064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1358193445438
+mem_heap_B=523272
+mem_heap_extra_B=259376
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1390532166853
+mem_heap_B=530760
+mem_heap_extra_B=263120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1433831090130
+mem_heap_B=540200
+mem_heap_extra_B=267840
+mem_stacks_B=0
+heap_tree=detailed
+n2: 540200 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 535568 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 535568 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 535568 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4632 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=1453649909765
+mem_heap_B=544664
+mem_heap_extra_B=270072
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1483247677286
+mem_heap_B=551048
+mem_heap_extra_B=273264
+mem_stacks_B=0
+heap_tree=detailed
+n2: 551048 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 546368 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 546368 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 546368 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4680 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=1528169409878
+mem_heap_B=561640
+mem_heap_extra_B=278560
+mem_stacks_B=0
+heap_tree=detailed
+n2: 561640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 556832 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 556832 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 556832 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4808 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=1554651497898
+mem_heap_B=567720
+mem_heap_extra_B=281600
+mem_stacks_B=0
+heap_tree=detailed
+n2: 567720 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 562848 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 562848 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 562848 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4872 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=1561566004469
+mem_heap_B=569288
+mem_heap_extra_B=282384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1563862927743
+mem_heap_B=569800
+mem_heap_extra_B=282640
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1566171760420
+mem_heap_B=570280
+mem_heap_extra_B=282880
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1568473292910
+mem_heap_B=570824
+mem_heap_extra_B=283152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1570795974855
+mem_heap_B=571400
+mem_heap_extra_B=283440
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1573081823302
+mem_heap_B=571832
+mem_heap_extra_B=283656
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1575373760366
+mem_heap_B=572376
+mem_heap_extra_B=283928
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1577657947289
+mem_heap_B=572920
+mem_heap_extra_B=284200
+mem_stacks_B=0
+heap_tree=detailed
+n2: 572920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 568096 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 568096 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 568096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4824 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=1579528836731
+mem_heap_B=573384
+mem_heap_extra_B=284432
+mem_stacks_B=0
+heap_tree=detailed
+n2: 573384 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 568528 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 568528 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 568528 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4856 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=1581856287951
+mem_heap_B=573816
+mem_heap_extra_B=284648
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1584134500818
+mem_heap_B=574248
+mem_heap_extra_B=284864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1586424768739
+mem_heap_B=574776
+mem_heap_extra_B=285128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1588702078165
+mem_heap_B=575208
+mem_heap_extra_B=285344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1591006289251
+mem_heap_B=575720
+mem_heap_extra_B=285600
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1593312313502
+mem_heap_B=576216
+mem_heap_extra_B=285848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1595593900476
+mem_heap_B=576728
+mem_heap_extra_B=286104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1597886508867
+mem_heap_B=577224
+mem_heap_extra_B=286352
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1600194678833
+mem_heap_B=577736
+mem_heap_extra_B=286608
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1602471057217
+mem_heap_B=578264
+mem_heap_extra_B=286872
+mem_stacks_B=0
+heap_tree=detailed
+n2: 578264 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 573536 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 573536 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 573536 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4728 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=1604743320666
+mem_heap_B=578808
+mem_heap_extra_B=287144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1606168910213
+mem_heap_B=579112
+mem_heap_extra_B=287296
+mem_stacks_B=0
+heap_tree=detailed
+n2: 579112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 574368 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 574368 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 574368 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4744 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=70
+#-----------
+time=1608460152326
+mem_heap_B=579576
+mem_heap_extra_B=287528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1610821086313
+mem_heap_B=580104
+mem_heap_extra_B=287792
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1613112848876
+mem_heap_B=580584
+mem_heap_extra_B=288032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1615389327205
+mem_heap_B=581160
+mem_heap_extra_B=288320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1617682297931
+mem_heap_B=581688
+mem_heap_extra_B=288584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1619983444416
+mem_heap_B=582168
+mem_heap_extra_B=288824
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=1622296974871
+mem_heap_B=582776
+mem_heap_extra_B=289128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1624594478243
+mem_heap_B=583384
+mem_heap_extra_B=289432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1626868958072
+mem_heap_B=583896
+mem_heap_extra_B=289688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=1629158276966
+mem_heap_B=584520
+mem_heap_extra_B=290000
+mem_stacks_B=0
+heap_tree=detailed
+n2: 584520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 579728 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 579728 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 579728 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4792 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=80
+#-----------
+time=1630670453736
+mem_heap_B=584904
+mem_heap_extra_B=290192
+mem_stacks_B=0
+heap_tree=peak
+n2: 584904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 580096 0x10970A: insert (in /home/antek/bfs/a.out)
+  n1: 580096 0x1094E2: bfs (in /home/antek/bfs/a.out)
+   n0: 580096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 4808 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=81
+#-----------
+time=1632949706424
+mem_heap_B=585432
+mem_heap_extra_B=290456
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=1635249599122
+mem_heap_B=586056
+mem_heap_extra_B=290768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=1637544227677
+mem_heap_B=586552
+mem_heap_extra_B=291016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=1639839871242
+mem_heap_B=587048
+mem_heap_extra_B=291264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=1642145908876
+mem_heap_B=587560
+mem_heap_extra_B=291520
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,35 @@
+BFS(PathToFile):
+    start <- pusta pozycja
+    end <- pusta pozycja
+    visited <- pusta zbiór odwiedzonych pozycji
+    parent <- pusta mapa przechowująca rodzica dla każdej pozycji
+    queue <- pusta kolejka
+
+    Wczytaj labirynt z pliku tekstowego
+    Ustal start i end
+
+    Dodaj start do kolejki
+    Oznacz start jako odwiedzony
+    Parent[start] <- NULL
+
+    Dopóki kolejka nie jest pusta:
+        current <- pobierz pierwszy element z kolejki
+        Jeśli current jest równy end:
+            Zakończ działanie algorytmu
+
+        Dla każdego sąsiada s pozycji current:
+            Jeśli s nie był odwiedzony:
+                Oznacz s jako odwiedzony
+                Dodaj s do kolejki
+                Parent[s] <- current
+
+    Jeśli algorytm doszedł do tego miejsca, oznacza to, że nie ma ścieżki od start do end
+
+Powrót ścieżki:
+    current <- end
+    Ścieżka <- pusta lista
+    Dopóki current nie jest NULL:
+        Dodaj current do ścieżki
+        current <- parent[current]
+    Odwróć kolejność elementów na ścieżce
+    Zwróć ścieżkę

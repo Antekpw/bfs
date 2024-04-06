@@ -1,0 +1,557 @@
+desc: (none)
+cmd: ./a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=298031450
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=490976170
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=731130702
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4632 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 64 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 64 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 64 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=1062121414
+mem_heap_B=4664
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1474236195
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 80 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 80 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 80 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=1802997410
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1978834232
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2273222792
+mem_heap_B=4616
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2453950227
+mem_heap_B=4680
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2854845334
+mem_heap_B=4680
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=3187123439
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=3426380915
+mem_heap_B=4584
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=3725325477
+mem_heap_B=4600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=3943747292
+mem_heap_B=4584
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=4212013054
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=4431327575
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 80 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 80 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 80 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=4699666521
+mem_heap_B=4600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=4963912948
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=5316436916
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 80 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 80 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 80 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=5584236449
+mem_heap_B=4664
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=5851804783
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=6219546697
+mem_heap_B=4680
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=6463571603
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=6889108815
+mem_heap_B=4680
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=7196430812
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=7504285119
+mem_heap_B=4600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=7749439691
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=7933944890
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=8180173069
+mem_heap_B=4600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n0: 32 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=8364412218
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=8610397236
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=8915499934
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=9273833169
+mem_heap_B=4616
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=9455682306
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=9724308582
+mem_heap_B=4600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=9993612169
+mem_heap_B=4616
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=10172928303
+mem_heap_B=4584
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=10530841507
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4632 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 64 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 64 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 64 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=10710468722
+mem_heap_B=4616
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=10979261824
+mem_heap_B=4696
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=11247968337
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=11428352222
+mem_heap_B=4648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 80 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 80 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 80 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=11787177871
+mem_heap_B=4616
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=12147502002
+mem_heap_B=4680
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=12330371551
+mem_heap_B=4776
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n1: 208 0x109584: enqueue (in /home/antek/bfs/a.out)
+  n1: 208 0x1094BE: bfs (in /home/antek/bfs/a.out)
+   n0: 208 0x1092C6: main (in /home/antek/bfs/a.out)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=12600130212
+mem_heap_B=4696
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=12779902168
+mem_heap_B=4696
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=13138170567
+mem_heap_B=4664
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=13319048935
+mem_heap_B=4616
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=13495838965
+mem_heap_B=4632
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=13666827504
+mem_heap_B=5608
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=peak
+n3: 5608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48D4BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x48E3CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E2CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48E3D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x1097B8: read (in /home/antek/bfs/a.out)
+      n1: 4096 0x10935D: bfs (in /home/antek/bfs/a.out)
+       n0: 4096 0x1092C6: main (in /home/antek/bfs/a.out)
+   n1: 1024 0x48E2F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48E16D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48E16D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48CB14C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48CB14C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x48B679E: printf (printf.c:33)
+         n1: 1024 0x1096AF: readqueue (in /home/antek/bfs/a.out)
+          n1: 1024 0x1094F0: bfs (in /home/antek/bfs/a.out)
+           n0: 1024 0x1092C6: main (in /home/antek/bfs/a.out)
+ n1: 472 0x48D564D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48D564D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1092B6: main (in /home/antek/bfs/a.out)
+ n0: 16 in 2 places, all below massif's threshold (1.00%)
