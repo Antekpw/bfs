@@ -1,12 +1,14 @@
 #include "readFile.h"
-<<<<<<< HEAD
 #include "floodfill.h"
 #include <stdio.h>
+#include <time.h>
+#include <stdbool.h>
+#include "bfs.h"
 int main(){
     clock_t start_t, end_t;
     double total_t;
     start_t=clock();
-    FILE *in = fopen("2.txt","r+");
+    FILE *in = fopen("duzy.txt","r+");
     FILE *out = fopen("plik","w");
     if(out==NULL){
       fprintf(stderr,"blad z plikem wyjsciowym\n");

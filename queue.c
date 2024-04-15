@@ -48,9 +48,6 @@ void readqueue(queue q){
     
 }
 void free_queue(queue q) {
-    if(q==NULL){
-    //    fprintf(stderr,"cos sie popsulo");            coś nie działa
-    }
     while (q != NULL) {
         queue temp = q;
         q = q->next;

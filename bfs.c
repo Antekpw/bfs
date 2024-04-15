@@ -11,11 +11,9 @@
 void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node){
     queue q = NULL;
     
-    markVisited(in,x0,y0, w); // oznacz jako odwiedzony w pliku 
+    markVisited(in,x0,y0, w); 
     q = enqueue(q,x0,y0);
     int x, y;
-    /*int dx[4] = {-1,1,0,0};
-    int dy[4] = {0,0,-1,1};*/
     int dx[4] = {0,1,0,-1};
     int dy[4] = {-1,0,1,0};
     int ile_odwiedzonych = 0;
@@ -39,16 +37,12 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
                 continue;
             }
             if(checkifdeadend(in,newx,newy,w)==0){
-                /*printf("punkt (%d,%d) jest slepym zaulkiem\n",newx,newy);
-                fbs(in,newx,newy,w,h); // zalej */
                 continue;
             }
             if(isInvalidPosition(in,newx,newy,w)==1){   
-                //printf("punkt (%d,%d) jest albo sciana albo plusem albo N",newx,newy);
                 continue; 
             }
-            if((check_if_node(newx,newy,in,w))==0){
-              //  printf("punkt (%d,%d) jest rozwidleniem stawiam N\n",newx,newy);      
+            if((check_if_node(newx,newy,in,w))==0){      
                 ile_node++;
                 if (stop_on_node){
                     stop = 1;
@@ -68,7 +62,7 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
     
     if(stop_on_node==false){
         queue q2 = NULL;
-        markPath(xk,yk,in,w); // tu moze byc problem
+        markPath(xk,yk,in,w); 
         q2 = enqueue(q2,xk,yk);
         int x2,y2;
         int stop2 = 0;
@@ -79,11 +73,9 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
             if((check_if_node_marked(x2,y2,in,w))==0){
                 int curpos = y2 * w + x2;
                 int dir = get_direction(nodes,curpos);
-               //printf("dir=%d\n",dir);
-                // 0 gora 1 prawo 2 dol 3 lewo
                 markPath(x2,y2,in,w);
                 x2 += dx[dir];
-                y2 +=dy[dir];
+                y2 += dy[dir];
                 markPath(x2,y2,in,w);
                 q2 = enqueue(q2,x2,y2);
                 continue;
@@ -93,7 +85,7 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
                 int newy2 = y2+dy[i];
                 if(newx2==x0 && newy2 ==y0){
                      markPath(x0,y0,in,w);
-                    stop2 = 1;
+                     stop2 = 1;
                 }
                 if((newx2<0 || newx2>w) || (newy2<0 || newy2>h) ){
                     continue;

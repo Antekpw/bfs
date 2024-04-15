@@ -8,10 +8,7 @@ int floodfill(FILE *in,int x0,int y0, int xk,int yk, int w, int h){
     int y =1;
     char c ;
     rewind(in);
-    int i = 0;
-    //printf("zaczecie floodfila");
     while(( c = fgetc(in))!=EOF){
-        i++;
         if(checkifdeadend(in,x,y,w)== 0){
             bfs(in, x, y, 0, 0, w, h, true);
         }

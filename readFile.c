@@ -47,7 +47,6 @@ void markPath(int x,int y, FILE *in, int w){
     fseek(in,y*(w) +x, SEEK_SET);
     fputc('O',in);
 }
-// Funkcja sprawdzająca, czy nowa pozycja jest prawidłowa
 int isInvalidPosition(FILE *in, int x, int y, int w) {
     fseek(in, y * (w) + x , SEEK_SET);
     char c = fgetc(in);
@@ -151,7 +150,6 @@ int steps_to_File(FILE *in,FILE *out,int x0, int y0,int xk,int yk,int w){
                 forward_count++;
                 if(dir == i){
                     q = enqueue(q,newx,newy);
-                    
                 }
                 if(dir!=i){
                     ile_curves++;
