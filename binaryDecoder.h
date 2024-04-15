@@ -31,3 +31,4 @@ typedef struct maze_Constructor {
 } maze_Constructor_t;
 
 void readBinary(FILE *coded_File, Header_t *header, maze_Constructor_t *bin_maze, FILE *decoded_maze);
+int steps_to_File_and_bin(FILE *in,FILE *out,int x0, int y0,int xk,int yk,int w,FILE *write_to, Header_t *header, maze_Constructor_t *bin_maze);

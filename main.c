@@ -34,8 +34,8 @@ int main(int argc, char **argv){
 
     fclose(binary_coded_file);
     fclose(final_maze);
-    free(header);
-    free(maze_frame);
+    //free(header);
+    //free(maze_frame);
 
     FILE *in = fopen(argv[2],"r+");
     FILE *out = fopen("Steps.txt","w");
@@ -43,12 +43,13 @@ int main(int argc, char **argv){
       fprintf(stderr,"blad z plikem wyjsciowym\n");
       return 1;
       }
+    FILE *binary_write = fopen(argv[1], "ab");
     int x0, y0, xk, yk,w,h;
     read(in,&x0,&y0,&xk,&yk,&w,&h);
     floodfill(in,x0,y0,xk,yk,w,h);
     zamiana(in);
     bfs(in, x0, y0, xk, yk, w, h, false);
-    uint32_t Steps = steps_to_File(in,out,x0,y0,xk,yk,w);
+    uint32_t Steps = steps_to_File_and_bin(in,out,x0,y0,xk,yk,w,binary_write,header,maze_frame);
     zamiana2(in);
     fclose(out);
   }

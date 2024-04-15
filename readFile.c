@@ -204,14 +204,3 @@ int steps_to_File(FILE *in,FILE *out,int x0, int y0,int xk,int yk,int w){
         }
         
 }
-
-
-
-
-
-
-
-
-
-
-
