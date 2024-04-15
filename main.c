@@ -1,8 +1,5 @@
-#include <time.h>
-#include "bfs.h"
-#include "queue.h"
-#include "parents.h"
 #include "readFile.h"
+<<<<<<< HEAD
 #include "floodfill.h"
 #include <stdio.h>
 int main(){
