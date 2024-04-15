@@ -52,8 +52,8 @@ int main(int argc, char **argv){
     uint32_t Steps = steps_to_File_and_bin(in,out,x0,y0,xk,yk,w,binary_write,header,maze_frame);
     zamiana2(in);
     fclose(out);
+    
   }
-
+  printf("Labirynt rozwiazany!\n");
   return 0;
-
 }
