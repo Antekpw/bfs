@@ -6,6 +6,7 @@
 
 typedef struct Header {
     uint32_t File_Id;
+    uint32_t Steps;
     uint8_t Escape;
     uint16_t Columns;
     uint16_t Lines;
@@ -25,6 +26,8 @@ typedef struct maze_Constructor {
     uint8_t Separator;
     uint8_t Value;
     uint8_t Count;
+    uint8_t Direction;
+    uint8_t Counter;
 } maze_Constructor_t;
 
 void readBinary(FILE *coded_File, Header_t *header, maze_Constructor_t *bin_maze, FILE *decoded_maze);
