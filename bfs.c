@@ -2,49 +2,125 @@
 #include "queue.h"
 #include "parents.h"
 #include "readFile.h"
+#include "fbs.h"
+#include "list.h"
+#include <stdlib.h>
 #include <stdio.h>
-int bfs(FILE *in){
-    int x0, y0, xk, yk,w,h;
-    read(in,&x0,&y0,&xk,&yk,&w,&h);
-    printf("xk=%d, yk =%d\n",xk,yk);
+#include <stdbool.h>
+
+// stop on node (bool) 
+void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node){
     queue q = NULL;
-    stos t = NULL;
+    
     markVisited(in,x0,y0, w); // oznacz jako odwiedzony w pliku 
     q = enqueue(q,x0,y0);
     int x, y;
-    int j =0;
-    int dx[4] = {-1,1,0,0};
-    int dy[4] = {0,0,-1,1};
+    /*int dx[4] = {-1,1,0,0};
+    int dy[4] = {0,0,-1,1};*/
+    int dx[4] = {0,1,0,-1};
+    int dy[4] = {-1,0,1,0};
     int ile_odwiedzonych = 0;
-    while(q!=NULL){
+    int ile_node = 0;
+    int stop = 0;
+    node_list* nodes = init_list(stop_on_node);
+    
+    while(q!=NULL && stop == 0){
         q = dequeue(q, &x, &y);
+        /*fseek(in, y * (w) + x , SEEK_SET);
+        if (fgetc(in) == 'N')
+            break;*/
+        /*if (check_if_node(x,y,in,w)==0)
+                break;*/     
+        markVisited(in,x,y, w);
+
         if(x==xk && y == yk){
             break;
-            
-            return 0;
+            exit(1);
         }
-
         for(int i=0;i<4;i++){   
             int newx = x+dx[i];
             int newy = y+dy[i];
             if((newx<0 || newx>=w) || (newy<0 || newy>=h) ){
                 continue;
             }
-            if(isInvalidPosition(in,newx,newy,w)==1){
-                continue; // to znaczy ze albo sciana albo juz odwiedzony czyli wsm mozna zwolnic pamiec dla rodzica i go usunac-jezeli plusik
+            if(checkifdeadend(in,newx,newy,w)==0){
+                /*printf("punkt (%d,%d) jest slepym zaulkiem\n",newx,newy);
+                fbs(in,newx,newy,w,h); // zalej */
+                continue;
             }
-            markVisited(in,newx,newy, w);
+            if(isInvalidPosition(in,newx,newy,w)==1){   
+                //printf("punkt (%d,%d) jest albo sciana albo plusem albo N",newx,newy);
+                continue; 
+            }
+            if((check_if_node(newx,newy,in,w))==0){
+              //  printf("punkt (%d,%d) jest rozwidleniem stawiam N\n",newx,newy);      
+                ile_node++;
+                if (stop_on_node)
+                    stop = 1;
+                else{
+                    markNode(newx,newy,in,w);
+                    int pos = newy*w + newx;
+                    add_node(nodes,pos,(i+2) %4 );
+                }
+            } 
+
             q = enqueue(q,newx,newy);
-            t = insert(t,x,y); // wstawianie na stos rodzica(poprzedniego punktu);
             ile_odwiedzonych++;
+            }   
         }
-        
+    free_queue(q);
+  
+    /*FILE *out = fopen("plik","w");
+    print_list(nodes,out);*/
+    if(stop_on_node==false){
+        queue q2 = NULL;
+        markPath(xk,yk,in,w); // tu moze byc problem
+        q2 = enqueue(q2,xk,yk);
+        int x2,y2;
+        int stop2 = 0;
+        while(q2!=NULL && stop2==0){
+            
+            q2 = dequeue(q2,&x2,&y2);
+
+            if((check_if_node_marked(x2,y2,in,w))==0){
+                int curpos = y2 * w + x2;
+                int dir = get_direction(nodes,curpos);
+               //printf("dir=%d\n",dir);
+               if(dir==0)
+               printf("UP");
+               if(dir==1)
+               printf("RIGHT");
+               if(dir==2)
+               printf("DOWN");
+               if(dir==3)
+               printf("LEFT");
+                // 0 gora 1 prawo 2 dol 3 lewo
+                markPath(x2,y2,in,w);
+                x2 += dx[dir];
+                y2 +=dy[dir];
+                markPath(x2,y2,in,w);
+                q2 = enqueue(q2,x2,y2);
+                continue;
+            }
+            for(int i=0;i<4;i++){   
+                int newx2 = x2+dx[i];
+                int newy2 = y2+dy[i];
+                if(newx2==x0 && newy2 ==y0){
+                     markPath(x2,y2,in,w);
+                    stop2 = 1;
+                }
+                if((newx2<0 || newx2>w) || (newy2<0 || newy2>h) ){
+                    continue;
+                }
+                
+                if(isInvalidPosition2(in,newx2,newy2,w) ==1){
+                    continue;
+                }         
+                
+                q2 = enqueue(q2,newx2,newy2);
+                break;
+            }
+            markPath(x2,y2,in,w);
     }
-    FILE *out = fopen("plik","w");
-    if(out==NULL){
-        fprintf(stderr,"blad z plikiem");
-    }
-    printstos_to_FILE(t,out);
-   readqueue(q);
-   printf("ile_odwiedzonych = %d\n",ile_odwiedzonych);
+}
 }

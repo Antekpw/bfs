@@ -7,3 +7,4 @@ typedef struct elem{
 queue enqueue(queue q,int x,int y);
 queue dequeue(queue q,int *x,int *y);
 void readqueue(queue q);
+void free_queue(queue q);

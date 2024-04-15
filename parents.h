@@ -1,10 +1,16 @@
 #include <stdio.h>
-typedef struct e {
-    int x;
-    int y;
-    struct e *next;
-} *stos;
 
-stos insert(stos t,int x, int y);
-void printstos_to_FILE(stos t,FILE *out);
-stos remove_last(stos t);
+
+int checkup(int x,int y,FILE *in,int w);
+int checkdown(int x ,int y,FILE *in, int w);
+int checkleft(int x ,int y,FILE *in, int w);
+int checkright(int x ,int y,FILE *in, int w);
+
+int checkup2(int x,int y,FILE *in,int w);
+int checkdown2(int x ,int y,FILE *in, int w);
+int checkleft2(int x ,int y,FILE *in, int w);
+int checkrigh2t(int x ,int y,FILE *in, int w);
+
+int check_if_node(int x,int y,FILE *in,int w);
+int checkifdeadend(FILE *in,int x, int y, int w);
+int check_if_node_marked(int x, int y, FILE *in, int w);

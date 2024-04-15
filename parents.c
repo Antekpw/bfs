@@ -1,40 +1,145 @@
 #include "parents.h"
 #include <stdlib.h>
 #include <stdio.h>
-stos insert(stos t,int x, int y){
-        stos nowy = malloc(sizeof*(nowy));
-        nowy->x = x;
-        nowy->y = y;
-        nowy->next = t;
-        return nowy;
+
+int checkup(int x,int y,FILE *in,int w){
+    fseek(in,(y-1)*w +x,SEEK_SET);
+    char c = fgetc(in);
+     if(c==' ' || c == '+' || c == 'P' || c == 'K'){
+        return 0;
+    }
+    return 1;
+}
+int checkdown(int x,int y,FILE *in,int w){
+    fseek(in,(y+1)*w +x,SEEK_SET);
+    char c = fgetc(in);
+     if(c==' ' || c == '+' || c == 'P' || c == 'K'){
+        return 0;
+    }
+    return 1;
+}
+int checkleft(int x, int y, FILE *in, int w){
+    fseek(in,y*w + x -1,SEEK_SET);
+    char c = fgetc(in);
+     if(c==' ' || c == '+'|| c == 'P' || c == 'K'){
+        return 0;
+    } else {
+    return 1;
+    }
+}
+int checkright(int x, int y, FILE *in, int w){
+    fseek(in,y*w + x + 1,SEEK_SET);
+    char c = fgetc(in);
+    if(c==' ' || c == '+'|| c == 'P' || c == 'K'){
+        return 0;
+    } else {
+    return 1;
+    }
+}
+int check_if_node(int x,int y,FILE *in,int w){
+   /* if(checkleft(x,y,in,w) == 1 && checkright(x,y,in,w) == 1){
+        return 1;
+    }
+    if(checkleft(x,y,in,w) != 1 ||  checkright(x,y,in,w) != 1){
+        if((checkup(x,y,in,w)!= 1) || (checkdown(x,y,in,w) != 1)){
+            return 0;
+        } else {
+            return 1;
+        }
+    */
+   int count = 0;
+   if(checkup(x,y,in,w)==0){
+    count++;
+   }
+    if(checkdown(x,y,in,w)==0){
+    count++;
+   }
+    if(checkright(x,y,in,w)==0){
+    count++;
+   }
+    if(checkleft(x,y,in,w)==0){
+    count++;
+   }
+   if(count>=3){
+        return 0;
+   }
+   return 1;
+}
+
+int checkup2(int x,int y,FILE *in,int w){
+    fseek(in,(y-1)*w +x,SEEK_SET);
+    char c = fgetc(in);
+    //printf("%c ", c);
+    if(c=='X' ){
+        return 0;
+    }
+    return 1;
+}
+int checkdown2(int x,int y,FILE *in,int w){
+    fseek(in,(y+1)*w +x,SEEK_SET);
+    char c = fgetc(in);
+   // printf("%c ", c);
+    if(c=='X'){
+        return 0;
+    }
+    return 1;
+}
+int checkleft2(int x, int y, FILE *in, int w){
+    fseek(in,y*w + x -1,SEEK_SET);
+    char c = fgetc(in);
+    //printf("%c ", c);
+    if(c=='X'){
+        return 0;
+    } 
+    return 1;
     
 }
-void printstos_to_FILE(stos t,FILE *out){
-        stos temp = t;
-        int i = 0;
-    while (temp != NULL) {
-        fprintf(out,"(%d, %d) ", temp->x, temp->y);
-        temp = temp->next;
-        if(i==10){
-            break;
-        }
-        i++;
+int checkright2(int x, int y, FILE *in, int w){
+    fseek(in,y*w + x + 1,SEEK_SET);
+    char c = fgetc(in);
+    //printf("%c ", c);
+    if(c=='X'){
+        return 0;
     }
+    return 1;
+    
 }
-stos remove_last(stos t) {
-    if (t == NULL || t->next == NULL) {
-        // Jeśli lista jest pusta lub zawiera tylko jeden element, zwolnij pamięć dla tego elementu i zwróć NULL
-        free(t);
-        return NULL;
+int checkifdeadend(FILE *in,int x, int y, int w){
+    fseek(in,y*w + x, SEEK_SET);
+    if (fgetc(in) != ' '){
+        return 1;
     }
 
-    stos temp = t;
-    while (temp->next->next != NULL) {
-        temp = temp->next;
+    fseek(in, -1 , SEEK_CUR);
+    int count = 0;
+    if(checkdown2(x,y,in,w)==0){
+        //printf("pod punktem (%d,%d) jest X\n",x,y);
+        count++;
     }
-    // Zwolnij pamięć dla ostatniego elementu
-    free(temp->next);
-    // Ustaw wskaźnik na NULL, aby oznaczyć nowy koniec listy
-    temp->next = NULL;
-    return t;
+    if(checkup2(x,y,in,w)==0){
+        //printf("nad punktem (%d,%d) jest X\n",x,y);
+        count++;
+    }
+    if(checkleft2(x,y,in,w)==0){
+        //printf("na lewo od punktu (%d,%d) jest X\n",x,y);
+        count++;
+    }
+    if(checkright2(x,y,in,w)==0){
+        //printf("na prawo od punktu (%d,%d) jest X\n",x,y);
+        count++;
+    }
+    if(count>=3){
+        return 0;
+    }
+    //printf("ścian jest mniej niż 3\n");
+    return 1;
+ 
 }
+int check_if_node_marked(int x, int y, FILE *in, int w){
+    fseek(in,y*w + x,SEEK_SET);
+    char c = fgetc(in);
+    if(c=='N'){
+        return 0;
+    }
+return 1;}
+
