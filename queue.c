@@ -6,7 +6,6 @@
 queue enqueue(queue q,int x, int y){
     if(q==NULL){
         queue nowy = malloc(sizeof *nowy);
-        //printf("kurwa tutaj");
         nowy->x = x;
         nowy->y = y;
         nowy->next = q;
@@ -21,12 +20,7 @@ queue enqueue(queue q,int x, int y){
     l->next->y = y;
     l->next->next = NULL;
     return q;
-    /*printf("jtjajf\n");
-    queue nowy = malloc(sizeof(struct elem));
-    nowy->x = x;
-    nowy->y = y;
-    nowy->next = q;
-    return nowy;*/
+    
 }
 queue dequeue(queue q,int *x, int *y){
     if(q==NULL){

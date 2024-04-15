@@ -2,7 +2,6 @@
 #include "queue.h"
 #include "parents.h"
 #include "readFile.h"
-#include "fbs.h"
 #include "list.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -22,15 +21,11 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
     int ile_odwiedzonych = 0;
     int ile_node = 0;
     int stop = 0;
+    int path_len = 0;
     node_list* nodes = init_list(stop_on_node);
     
     while(q!=NULL && stop == 0){
-        q = dequeue(q, &x, &y);
-        /*fseek(in, y * (w) + x , SEEK_SET);
-        if (fgetc(in) == 'N')
-            break;*/
-        /*if (check_if_node(x,y,in,w)==0)
-                break;*/     
+        q = dequeue(q, &x, &y);   
         markVisited(in,x,y, w);
 
         if(x==xk && y == yk){
@@ -55,9 +50,9 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
             if((check_if_node(newx,newy,in,w))==0){
               //  printf("punkt (%d,%d) jest rozwidleniem stawiam N\n",newx,newy);      
                 ile_node++;
-                if (stop_on_node)
+                if (stop_on_node){
                     stop = 1;
-                else{
+                }else{
                     markNode(newx,newy,in,w);
                     int pos = newy*w + newx;
                     add_node(nodes,pos,(i+2) %4 );
@@ -70,8 +65,7 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
         }
     free_queue(q);
   
-    /*FILE *out = fopen("plik","w");
-    print_list(nodes,out);*/
+    
     if(stop_on_node==false){
         queue q2 = NULL;
         markPath(xk,yk,in,w); // tu moze byc problem
@@ -86,14 +80,6 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
                 int curpos = y2 * w + x2;
                 int dir = get_direction(nodes,curpos);
                //printf("dir=%d\n",dir);
-               if(dir==0)
-               printf("UP");
-               if(dir==1)
-               printf("RIGHT");
-               if(dir==2)
-               printf("DOWN");
-               if(dir==3)
-               printf("LEFT");
                 // 0 gora 1 prawo 2 dol 3 lewo
                 markPath(x2,y2,in,w);
                 x2 += dx[dir];
@@ -106,7 +92,7 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
                 int newx2 = x2+dx[i];
                 int newy2 = y2+dy[i];
                 if(newx2==x0 && newy2 ==y0){
-                     markPath(x2,y2,in,w);
+                     markPath(x0,y0,in,w);
                     stop2 = 1;
                 }
                 if((newx2<0 || newx2>w) || (newy2<0 || newy2>h) ){
@@ -122,5 +108,7 @@ void bfs(FILE *in,int x0,int y0,int xk, int yk, int w, int h, bool stop_on_node)
             }
             markPath(x2,y2,in,w);
     }
+    free_queue(q2);
+    free_list(nodes);
 }
 }
