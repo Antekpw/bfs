@@ -1,4 +1,4 @@
-Program rozwiązuje labirynty zapisane w plikach o rozszerzeniu .txt oraz zakodowanych binarnie. 
+Program znajduje najkrótszą ścieżkę prowadzącą do wyjścia z labiryntu zapisanego w pliku o rozszerzeniu .txt oraz zakodowanego binarnie. 
 Dla labiryntów nie większych od 1024x1024 zajmuje mniej niż 512kB pamięci.
 
 Sposoby wywołania programu:
